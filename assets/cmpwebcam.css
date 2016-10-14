@@ -1,0 +1,36 @@
+#cmpwebcam-snapshot{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    text-indent: -1000px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    height: 30%;
+    cursor: pointer;
+}
+.profile_image:hover #cmpwebcam-snapshot{
+    display: block;
+}
+#cmpwebcam-snapshot:before{
+    display: inline-block;
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: normal;
+    line-height: inherit;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    text-indent: 0 !important;
+    content: '\f030';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 30px;
+    margin-left: -20px;
+    margin-top: -20px;
+}
