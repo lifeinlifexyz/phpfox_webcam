@@ -56,9 +56,9 @@ class Ajax extends Phpfox_Ajax
                     }
                     @unlink($sTempPath);
                     $this->hide('#cmpwebcam_ajax_load');
-                    if (isset($this->get('core')['is_user_profile']) && $this->get('core')['is_user_profile'] == '0'){
+                    if (!defined('PHPFOX_IS_USER_PROFILE')){
                         if (file_exists(Phpfox::getParam('core.dir_user') . sprintf($sUserImage, '_75_square'))){
-                            $this->html('#cmpwebcam_fup_avatar_result', '<img width="75" src="'.Phpfox::getParam('core.url_user') . sprintf($sUserImage, '_75_square').'" />')->show('#cmpwebcam_fup_avatar_result');
+                            $this->call('if ($("#cmpwebcam_fup_avatar_result").length > 0){$("#cmpwebcam_fup_avatar_result").html(\'<img width="75" src="'.Phpfox::getParam('core.url_user') . sprintf($sUserImage, '_75_square').'?v='.uniqid().'" />\');$("#cmpwebcam_fup_avatar_result").show();}else{window.location.href="'.Phpfox::getLib('url')->makeUrl('profile').'";}');
                         } else {
                             $this->alert(_p('Your avatar photo successfully changed'));
                         }

@@ -1,5 +1,5 @@
 <?php
-if (setting('cm_pwebcam_enabled')) {
+if (setting('cm_pwebcam_enabled') && Phpfox::isUser()) {
     asset(array(
         '@CM_PWebCam/cmpwebcam.css',
         '@CM_PWebCam/webcam.min.js'
