@@ -1,7 +1,7 @@
 {
     "id": "CM_PWebCam",
     "internal_id": 0,
-    "version": "1",
+    "version": "1.0.0",
     "current_version": null,
     "name": "CM Profile Avatar with Webcam",
     "module": false,
