@@ -17,8 +17,7 @@ class Box extends Phpfox_Component
     public function process()
     {
         $this->template()->assign(array(
-                'sHeader' => _p('WebCam'),
-                'fup'=>$this->getParam('fup')
+                'sHeader' => _p('WebCam')
             )
         );
         return 'block';

@@ -54,10 +54,9 @@ class Ajax extends Phpfox_Ajax
                         }
                         $oImage->createThumbnail($sTempPath, Phpfox::getParam('core.dir_user') . sprintf($sUserImage, '_' . $iSize . '_square'), $iSize, $iSize, false);
                     }
-//                    Phpfox::getLib('cache')->removeStatic();
                     @unlink($sTempPath);
                     $this->hide('#cmpwebcam_ajax_load');
-                    if (!empty($this->get('fup'))){
+                    if (isset($this->get('core')['is_user_profile']) && $this->get('core')['is_user_profile'] == '0'){
                         if (file_exists(Phpfox::getParam('core.dir_user') . sprintf($sUserImage, '_75_square'))){
                             $this->html('#cmpwebcam_fup_avatar_result', '<img width="75" src="'.Phpfox::getParam('core.url_user') . sprintf($sUserImage, '_75_square').'" />')->show('#cmpwebcam_fup_avatar_result');
                         } else {

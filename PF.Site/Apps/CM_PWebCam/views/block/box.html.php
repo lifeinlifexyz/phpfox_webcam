@@ -39,7 +39,7 @@ defined('PHPFOX') or exit('NO DICE!');
         $('#cmpwebcam_save_photo').off('click').on('click', function () {
             Webcam.snap( function(data_uri) {
                 $('#cmpwebcam_ajax_load').show();
-                $.ajaxCall('cmpwebcam.uploadPhoto', 'data-image='+data_uri+'{/literal}{if isset($fup)}&fup=true{/if}{literal}', 'POST');
+                $.ajaxCall('cmpwebcam.uploadPhoto', 'data-image='+data_uri, 'POST');
                 $('#cmpwebcam_pre_take_buttons').show();
                 $('#cmpwebcam_post_take_buttons').hide();
             } );
@@ -71,7 +71,7 @@ defined('PHPFOX') or exit('NO DICE!');
                     cropped.croppie('result','canvas').then(function (data_uri)
                     {
                         $('#cmpwebcam_ajax_load').show();
-                        $.ajaxCall('cmpwebcam.uploadPhoto', 'data-image='+data_uri+'{/literal}{if isset($fup)}&fup=true{/if}{literal}', 'POST');
+                        $.ajaxCall('cmpwebcam.uploadPhoto', 'data-image='+data_uri, 'POST');
                     });
                 });
             });
