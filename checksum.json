@@ -1,0 +1,15 @@
+[
+    "PF.Site\/Apps\/CM_PWebCam\/Ajax\/Ajax.php",
+    "PF.Site\/Apps\/CM_PWebCam\/app.json",
+    "PF.Site\/Apps\/CM_PWebCam\/assets\/cmpwebcam.css",
+    "PF.Site\/Apps\/CM_PWebCam\/assets\/snapshot.js",
+    "PF.Site\/Apps\/CM_PWebCam\/assets\/webcam.min.js",
+    "PF.Site\/Apps\/CM_PWebCam\/assets\/webcam.swf",
+    "PF.Site\/Apps\/CM_PWebCam\/Block\/Box.php",
+    "PF.Site\/Apps\/CM_PWebCam\/hooks\/module_setcontroller_end.php",
+    "PF.Site\/Apps\/CM_PWebCam\/hooks\/user.template_controller_profile_form.php",
+    "PF.Site\/Apps\/CM_PWebCam\/start.php",
+    "PF.Site\/Apps\/CM_PWebCam\/views\/block\/box.html.php",
+    "package.json",
+    "checksum.json"
+]
