@@ -8,6 +8,8 @@
     "PF.Site\/Apps\/CM_PWebCam\/Block\/Box.php",
     "PF.Site\/Apps\/CM_PWebCam\/hooks\/module_setcontroller_end.php",
     "PF.Site\/Apps\/CM_PWebCam\/hooks\/user.template_controller_profile_form.php",
+    "PF.Site\/Apps\/CM_PWebCam\/icon.png",
+    "PF.Site\/Apps\/CM_PWebCam\/Install.php",
     "PF.Site\/Apps\/CM_PWebCam\/start.php",
     "PF.Site\/Apps\/CM_PWebCam\/views\/block\/box.html.php",
     "package.json",

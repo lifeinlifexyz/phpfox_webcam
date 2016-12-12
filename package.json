@@ -1,11 +1,11 @@
 {
     "id": "CM_PWebCam",
     "internal_id": 0,
-    "version": "1.0.0",
+    "version": "1.0.1",
     "current_version": null,
     "name": "CM Profile Avatar with Webcam",
     "module": false,
     "type": "app",
-    "icon": "<div class=\"app_icons image_load\" data-src=\"\/\/cdn.codemake.org\/phpfox\/cmpwebcam\/default.png\"><\/div>",
+    "icon": "<div class=\"app_icons image_load\" data-src=\"http:\/\/localhost\/fox4.5\/PF.Site\/Apps\/CM_PWebCam\/icon.png\"><\/div>",
     "is_core": false
 }
