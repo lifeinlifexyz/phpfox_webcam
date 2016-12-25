@@ -38,7 +38,8 @@ class Ajax extends Phpfox_Ajax
                 $sTempPath = PHPFOX_DIR_CACHE . md5('user_avatar' . $iUserId) . '.jpg';
                 $mData = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', str_replace(' ', '+', $this->get('data-image'))));
                 file_put_contents($sTempPath, $mData);
-                if (!Phpfox::getUserBy('user_image') && file_exists($sTempPath)){
+                Phpfox::getService('user.process')->removeProfilePic(Phpfox::getUserId());
+                if (file_exists($sTempPath)){
                     $aUserImage = Phpfox::getService('user.process')->uploadImage($iUserId, true, $sTempPath);
                 }
                 if (isset($aUserImage['user_image']) && !empty($aUserImage['user_image'])){
